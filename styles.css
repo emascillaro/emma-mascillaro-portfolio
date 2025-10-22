@@ -73,6 +73,24 @@ nav .right a:hover {
     transition: color 0.3s ease-in-out;
 }
 
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #24292e;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.github-link:hover {
+    background-color: #2f363d;
+}
+
 /* General Section Styles */
 section {
     padding: 8rem 2rem;
@@ -119,21 +137,63 @@ section h2::after {
 /* About Section */
 #about-section {
     min-height: 100vh;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     padding: 8rem 2rem;
     display: flex;
     align-items: center;
-    text-align: center;
+    text-align: left;
     gap: 0.5rem;
 }
 
+/*About section - title*/
 #about-section h2 {
-    margin-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
     font-size: 2.75rem;
     font-weight: 700;
 }
 
+/*About section - bio*/
+#about-section .bio {
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+    max-width: 56.25rem;
+}
+
+#about-section .bio p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+#about-section .social-links {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+    max-width: 56.25rem;
+    text-align: center;    
+}
+
+#about-section .social-links a {
+    padding: 0;
+    margin: 0 0.75rem;
+}
+
+#about-section .social-links a i {
+    transition: transform 0.3s, color 0.3s;
+}
+
+#about-section .social-links a:hover i {
+    color: #a5d6b0;
+    transform: scale(1.2);
+}
+
+#about-section .social-links i {
+    color: #588061;
+    font-weight: 500;
+}
+
+/*About section - headshot*/
 #about-section .headshot {
     width: 20rem;
     height: 20rem;
@@ -156,41 +216,9 @@ section h2::after {
     transform: scale(1.2);
 }
 
-#about-section .bio {
-    margin-bottom: 2rem;
-    padding: 0 2rem;
-    max-width: 56.25rem;
-}
-
-#about-section .bio p {
-    font-size: 1.25rem;
-    font-weight: 300;
-}
-
-#about-section .social-links {
-    font-size: 2.25rem;
-}
-
-#about-section .social-links a {
-    padding: 0;
-    margin: 0 0.75rem;
-}
-
-#about-section .social-links a i {
-    transition: transform 0.3s, color 0.3s;
-}
-
-#about-section .social-links a:hover i {
-    color: #a5d6b0;
-    transform: scale(1.2);
-}
-
-#about-section .social-links i {
-    color: #588061;
-    font-weight: 500;
-}
 
 /* Experience Section */
+/*
 #experience-section {
     min-height: 100vh;
     display: flex;
@@ -235,6 +263,7 @@ section h2::after {
     font-size: 1rem;
     font-weight: 300;
 }
+*/
 
 /* Projects Section */
 #projects-section {

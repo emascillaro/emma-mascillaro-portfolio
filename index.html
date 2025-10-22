@@ -47,33 +47,36 @@
 
     <!--about section-->
     <section id="about-section">
-      <h2>Hey World, I'm Emma!</h2>
+      <div class="left-column">
+        <div class="bio">
+          <h2>Hello, I'm Emma!</h2>
+          <p>
+            Hello! I'm Emma, a software engineer and recent graduate from Olin
+            College of Engineering with a degree in Electrical and Computer
+            Engineering. With experience in software development and UX design,
+            I’m an aspiring Computer Scientist with a passion to develop
+            platforms to address solving social problems.
+          </p>
+          <br />
+          <p>Below are some of the projects I have worked on recently.</p>
+        </div>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/emma-mascillaro/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/emascillaro" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
       <div class="headshot">
         <picture>
           <source srcset="images/headshot.jpeg" type="image/jpeg" />
           <img src="images/headshot.jpeg" alt="headshot" />
         </picture>
-      </div>
-      <div class="bio">
-        <p>
-          Hey! I'm Emma, a recent graduate from Olin College of Engineering
-          who's incredibly excited about software development and UX design.
-          With a background in computer science and biology, I'm well equipped
-          with a technical skillset and an eagerness to experiment!
-        </p>
-        <br />
-        <p>
-          Outside of career and academics, I enjoy playing volleyball, making
-          videos, watching anime, and lifting weights!
-        </p>
-      </div>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/emma-mascillaro/" target="_blank">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/emascillaro" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
       </div>
     </section>
 
@@ -89,9 +92,10 @@
         <h3>Software</h3>
         <div #swiperRef="" class="swiper card-swiper">
           <div class="swiper-wrapper">
+            <!-- Software Project 1 -->
             <div class="swiper-slide">
               <a
-                href="https://github.com/stephanieran/floppy-fish"
+                href="https://github.com/emascillaro/ocr-calculator"
                 target="_blank"
                 class="project-box"
               >
@@ -113,8 +117,12 @@
                   extraction with OpenCV and Tesseract, then evaluated and
                   parsed expressions for computation.
                 </p>
+                <button class="github-link" onclick="toggleModal(1)">
+                  View on GitHub
+                </button>
               </a>
             </div>
+            <!-- Software Project 2 -->
             <div class="swiper-slide">
               <a
                 href="https://github.com/stephanieran/circles"
@@ -374,5 +382,6 @@
     <section id="contact-section">
       <h2>Contact</h2>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -316,6 +316,29 @@ section h2::after {
     color: white;
 }
 
+.project-card .report-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: rgb(80, 146, 232);
+    color: #24292e;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+    margin: 0.5rem;
+    align-self: flex-start;
+}
+
+.project-card .report-download:hover {
+    background-color: rgb(129, 181, 248);
+}
+
+.project-card .report-download svg {
+    margin-right: 4px;
+    fill: white;
+    color: white;
+}
 
 /* Skills Section */
 #skills-section {
@@ -348,6 +371,18 @@ section h2::after {
 }
 
 #skills-section i:hover {
+    transform: scale(1.2);
+    color: #a5d6b0;
+}
+
+#skills-section img {
+    font-size: 3rem;
+    color: #588061;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin: 1rem 0; /* Add margin to ensure proper spacing */
+}
+
+#skills-section img:hover {
     transform: scale(1.2);
     color: #a5d6b0;
 }

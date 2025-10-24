@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emma Mascillaro Portfolio</title>
+    <!-- Add icon link -->
+    <link rel="icon" href="assets/circle_user.png" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -69,8 +71,8 @@
       </div>
       <div class="headshot">
         <picture>
-          <source srcset="images/headshot.jpeg" type="image/jpeg" />
-          <img src="images/headshot.jpeg" alt="headshot" />
+          <source srcset="assets/images/headshot.jpeg" type="image/jpeg" />
+          <img src="assets/images/headshot.jpeg" alt="headshot" />
         </picture>
       </div>
     </section>
@@ -88,8 +90,11 @@
         <div class="project-card">
           <!-- image -->
           <picture>
-            <source srcset="images/webp/circles-1.webp" type="image/webp" />
-            <img src="images/circles-1.png" alt="OCR Calculator" />
+            <source
+              srcset="assets/images/ocr_calculator.png"
+              type="image/png"
+            />
+            <img src="assets/images/ocr_calculator.png" alt="OCR Calculator" />
           </picture>
 
           <!-- title -->
@@ -115,65 +120,84 @@
           >
             <i class="fa-brands fa-github"></i> View on GitHub
           </a>
+          <!-- Report link -->
+          <a
+            class="report-download"
+            href="assets/ocr_calculator_report.pdf"
+            download
+            ><i class="fa fa-download"></i> Download Report</a
+          >
         </div>
         <!--Project 2: -->
         <div class="project-card">
           <!-- image -->
           <picture>
-            <source srcset="images/webp/circles-1.webp" type="image/webp" />
-            <img src="images/circles-1.png" alt="OCR Calculator" />
+            <source
+              srcset="assets/images/robotic_arm_object_detection_2.png"
+              type="image/png"
+            />
+            <img
+              src="assets/images/robotic_arm_object_detection_2.png"
+              alt="Object Detection"
+            />
           </picture>
 
           <!-- title -->
-          <h4>Optical Character Recognition Calculator</h4>
+          <h4>Voice-Controlled Robotic Arm</h4>
 
           <!-- skills -->
-          <h5><em>Python, OpenCV, Tesseract, JavaScript, HTML, CSS</em></h5>
+          <h5><em>Python, Arduino</em></h5>
 
           <!-- description -->
           <p>
-            Application that uses Optical Character Recognition (OCR) to detect
-            and parse mathematical expressions from images. Implemented image
-            preprocessing, contour detection, and text extraction with OpenCV
-            and Tesseract, then evaluated and parsed expressions for
-            computation.
+            Robotic arm system that responds to user voice commands by parsing
+            speech input and executing corresponding actions. Integrated object
+            detection to locate and retrieve specified items autonomously.
           </p>
           <!-- github link -->
           <a
             class="github-link"
-            href="https://github.com/emascillaro/ocr-calculator"
+            href="https://github.com/emascillaro/SeniorProject_FALL"
             target="_blank"
           >
             <i class="fa-brands fa-github"></i> View on GitHub
           </a>
+          <!-- Report link -->
+          <a
+            class="report-download"
+            href="assets/robotic_arm_report.pdf"
+            download
+            ><i class="fa fa-download"></i> Download Report</a
+          >
         </div>
 
         <!--Project 3:-->
         <div class="project-card">
           <!-- image -->
           <picture>
-            <source srcset="images/webp/circles-1.webp" type="image/webp" />
-            <img src="images/circles-1.png" alt="OCR Calculator" />
+            <source
+              srcset="assets/images/brailldle_cell.png"
+              type="image/png"
+            />
+            <img src="assets/images/brailldle_cell.png" alt="Brailldle Cell" />
           </picture>
 
           <!-- title -->
-          <h4>Optical Character Recognition Calculator</h4>
+          <h4>Brailldle</h4>
 
           <!-- skills -->
-          <h5><em>Python, OpenCV, Tesseract, JavaScript, HTML, CSS</em></h5>
+          <h5><em>Python, Arduino</em></h5>
 
           <!-- description -->
           <p>
-            Application that uses Optical Character Recognition (OCR) to detect
-            and parse mathematical expressions from images. Implemented image
-            preprocessing, contour detection, and text extraction with OpenCV
-            and Tesseract, then evaluated and parsed expressions for
-            computation.
+            Portable refreshable braille device that captures text from the
+            environment using an onboard camera, converts it to braille, and
+            displays it tactically for the user.
           </p>
           <!-- github link -->
           <a
             class="github-link"
-            href="https://github.com/emascillaro/ocr-calculator"
+            href="https://github.com/emascillaro/MakeMIT2022"
             target="_blank"
           >
             <i class="fa-brands fa-github"></i> View on GitHub
@@ -183,57 +207,71 @@
         <div class="project-card">
           <!-- image -->
           <picture>
-            <source srcset="images/webp/circles-1.webp" type="image/webp" />
-            <img src="images/circles-1.png" alt="OCR Calculator" />
+            <source
+              srcset="assets/images/engineering_density_map.png"
+              type="image/png"
+            />
+            <img
+              src="assets/images/engineering_density_map.png"
+              alt="College Majors Data"
+            />
           </picture>
 
           <!-- title -->
-          <h4>Optical Character Recognition Calculator</h4>
+          <h4>Web Scraping College Majors Data</h4>
 
           <!-- skills -->
-          <h5><em>Python, OpenCV, Tesseract, JavaScript, HTML, CSS</em></h5>
+          <h5><em>Python</em></h5>
 
           <!-- description -->
           <p>
-            Application that uses Optical Character Recognition (OCR) to detect
-            and parse mathematical expressions from images. Implemented image
-            preprocessing, contour detection, and text extraction with OpenCV
-            and Tesseract, then evaluated and parsed expressions for
-            computation.
+            Web scraping tool that collects and analyzes undergraduate major
+            prevalence data from Niche.com's top-ranked colleges by state.
+            Processed, compared, and visualized trends in major selection across
+            the U.S., enabling geographic and field-specific insights. Applied
+            requests, parsing, and data visualization techniques.
           </p>
-          <button
-            onclick="location.href='https://github.com/emascillaro/ocr-calculator'"
+          <!-- github link -->
+          <a
             class="github-link"
+            href="https://github.com/olincollege/niche-major-finder"
+            target="_blank"
           >
             <i class="fa-brands fa-github"></i> View on GitHub
-          </button>
+          </a>
         </div>
         <!--Project 5:-->
         <div class="project-card">
           <!-- image -->
           <picture>
-            <source srcset="images/webp/circles-1.webp" type="image/webp" />
-            <img src="images/circles-1.png" alt="OCR Calculator" />
+            <source
+              srcset="assets/images/cropped_audio_interaction.png"
+              type="image/png"
+            />
+            <img
+              src="assets/images/cropped_audio_interaction.png"
+              alt="Fairytale Sound Effects"
+            />
           </picture>
 
           <!-- title -->
-          <h4>Optical Character Recognition Calculator</h4>
+          <h4>Fairytale Sound Effects</h4>
 
           <!-- skills -->
-          <h5><em>Python, OpenCV, Tesseract, JavaScript, HTML, CSS</em></h5>
+          <h5><em>Python, Google Speech Recognition API, Pygame</em></h5>
 
           <!-- description -->
           <p>
-            Application that uses Optical Character Recognition (OCR) to detect
-            and parse mathematical expressions from images. Implemented image
-            preprocessing, contour detection, and text extraction with OpenCV
-            and Tesseract, then evaluated and parsed expressions for
-            computation.
+            Interactive storytelling application that plays context-specific
+            sound effects as a user reads aloud. Implemented speech-to-text
+            recognition and keyword detection to trigger audio responses in real
+            time. Enhanced user engagement in reading activities through
+            immersive audio feedback.
           </p>
           <!-- github link -->
           <a
             class="github-link"
-            href="https://github.com/emascillaro/ocr-calculator"
+            href="https://github.com/olincollege/fairytale-sound-effects"
             target="_blank"
           >
             <i class="fa-brands fa-github"></i> View on GitHub
@@ -243,28 +281,28 @@
         <div class="project-card">
           <!-- image -->
           <picture>
-            <source srcset="images/webp/circles-1.webp" type="image/webp" />
-            <img src="images/circles-1.png" alt="OCR Calculator" />
+            <source srcset="assets/images/mehendi_bot.jpeg" type="image/jpeg" />
+            <img src="assets/images/mehendi_bot.jpeg" alt="Mehendi Bot" />
           </picture>
 
           <!-- title -->
-          <h4>Optical Character Recognition Calculator</h4>
+          <h4>Mehendi Bot</h4>
 
           <!-- skills -->
-          <h5><em>Python, OpenCV, Tesseract, JavaScript, HTML, CSS</em></h5>
+          <h5><em>Python, Arduino, G-code</em></h5>
 
           <!-- description -->
           <p>
-            Application that uses Optical Character Recognition (OCR) to detect
-            and parse mathematical expressions from images. Implemented image
-            preprocessing, contour detection, and text extraction with OpenCV
-            and Tesseract, then evaluated and parsed expressions for
-            computation.
+            Robotic system capable of applying henna designs to a user's hand
+            based on captured images and chosen patterns. Mapped designs to 3D
+            hand geometry, then controlled a syringe applicator along x, y, and
+            z axes for precision placement. Demonstrated automation of a
+            traditionally manual art form.
           </p>
           <!-- github link -->
           <a
             class="github-link"
-            href="https://github.com/emascillaro/ocr-calculator"
+            href="https://github.com/ruchadave16/mehendi-bot"
             target="_blank"
           >
             <i class="fa-brands fa-github"></i> View on GitHub
@@ -272,31 +310,35 @@
         </div>
         <!--Project 7:-->
         <div class="project-card">
-          <!-- github link -->
           <!-- image -->
           <picture>
-            <source srcset="images/webp/circles-1.webp" type="image/webp" />
-            <img src="images/circles-1.png" alt="OCR Calculator" />
+            <source
+              srcset="assets/images/img-1.05-normals-sphere-ground.png"
+              type="image/png"
+            />
+            <img
+              src="assets/images/img-1.05-normals-sphere-ground.png"
+              alt="Raytracing"
+            />
           </picture>
 
           <!-- title -->
-          <h4>Optical Character Recognition Calculator</h4>
+          <h4>Raytracing</h4>
 
           <!-- skills -->
-          <h5><em>Python, OpenCV, Tesseract, JavaScript, HTML, CSS</em></h5>
+          <h5><em>C++, CMake</em></h5>
 
           <!-- description -->
           <p>
-            Application that uses Optical Character Recognition (OCR) to detect
-            and parse mathematical expressions from images. Implemented image
-            preprocessing, contour detection, and text extraction with OpenCV
-            and Tesseract, then evaluated and parsed expressions for
-            computation.
+            Ray tracer that renders 3D spheres with surface normal shading.
+            Developed a structured teaching module with step-by-step exercises
+            and unit tests for students learning ray tracing fundamentals.
+            Combined graphics programming with educational resource design.
           </p>
           <!-- github link -->
           <a
             class="github-link"
-            href="https://github.com/emascillaro/ocr-calculator"
+            href="https://github.com/olincollege/Raytracing"
             target="_blank"
           >
             <i class="fa-brands fa-github"></i> View on GitHub
@@ -306,28 +348,34 @@
         <div class="project-card">
           <!-- image -->
           <picture>
-            <source srcset="images/webp/circles-1.webp" type="image/webp" />
-            <img src="images/circles-1.png" alt="OCR Calculator" />
+            <source
+              srcset="assets/images/waveformlength_test_confusion.png"
+              type="image/png"
+            />
+            <img
+              src="assets/images/waveformlength_test_confusion.png"
+              alt="EMG Classifier"
+            />
           </picture>
 
           <!-- title -->
-          <h4>Optical Character Recognition Calculator</h4>
+          <h4>EMG Rock, Paper, Scissors Classifier</h4>
 
           <!-- skills -->
-          <h5><em>Python, OpenCV, Tesseract, JavaScript, HTML, CSS</em></h5>
+          <h5><em>MATLAB</em></h5>
 
           <!-- description -->
           <p>
-            Application that uses Optical Character Recognition (OCR) to detect
-            and parse mathematical expressions from images. Implemented image
-            preprocessing, contour detection, and text extraction with OpenCV
-            and Tesseract, then evaluated and parsed expressions for
-            computation.
+            Designed and implemented an EMG-based gesture classifier to play
+            rock, paper, scissors using live muscle signal data. Applied
+            preprocessing, feature extraction, and model training to achieve
+            accurate real-time classification. Evaluated alternative EMG
+            applications for broader assistive technology use.
           </p>
           <!-- github link -->
           <a
             class="github-link"
-            href="https://github.com/emascillaro/ocr-calculator"
+            href="https://github.com/emascillaro/Neurotech2023/tree/main/rock_paper_scissors_project"
             target="_blank"
           >
             <i class="fa-brands fa-github"></i> View on GitHub
@@ -338,32 +386,45 @@
           <!-- github link -->
           <!-- image -->
           <picture>
-            <source srcset="images/webp/circles-1.webp" type="image/webp" />
-            <img src="images/circles-1.png" alt="OCR Calculator" />
+            <source
+              srcset="assets/images/sphx_glr_plot_cluster_comparison_001.png"
+              type="image/png"
+            />
+            <img
+              src="assets/images/sphx_glr_plot_cluster_comparison_001.png"
+              alt="Mine Detection"
+            />
           </picture>
 
           <!-- title -->
-          <h4>Optical Character Recognition Calculator</h4>
+          <h4>Mine Detection via Image Segmentation</h4>
 
           <!-- skills -->
-          <h5><em>Python, OpenCV, Tesseract, JavaScript, HTML, CSS</em></h5>
+          <h5><em>MATLAB</em></h5>
 
           <!-- description -->
           <p>
-            Application that uses Optical Character Recognition (OCR) to detect
-            and parse mathematical expressions from images. Implemented image
-            preprocessing, contour detection, and text extraction with OpenCV
-            and Tesseract, then evaluated and parsed expressions for
-            computation.
+            Compared five segmentation methods (agglomerative clustering,
+            k-means, Gaussian mixture model, DBSCAN, active contour) to detect
+            mining sites in satellite imagery. Assessed accuracy and suitability
+            of each method for different mine characteristics. Provided insights
+            into environmental monitoring and remote sensing automation.
           </p>
           <!-- github link -->
           <a
             class="github-link"
-            href="https://github.com/emascillaro/ocr-calculator"
+            href="https://github.com/giauyentran/fa24-imageprocessing"
             target="_blank"
           >
             <i class="fa-brands fa-github"></i> View on GitHub
           </a>
+          <!-- Report link -->
+          <a
+            class="report-download"
+            href="assets/mine_detection_project_report.pdf"
+            download
+            ><i class="fa fa-download"></i> Download Report</a
+          >
         </div>
       </div>
     </section>
@@ -375,13 +436,17 @@
       <div class="skills-container">
         <i class="fa-brands fa-python"></i>
         <i class="fa-brands fa-java"></i>
-        <i class="fa-brands fa-swift"></i>
-        <i class="fa-brands fa-figma"></i>
+        <i class="devicon-c-plain-wordmark"></i>
+        <!--c++ icon-->
+        <img src="assets/icons8-c++-16.png" alt="cpp" width="16" height="16" />
+        <!--matlab icon-->
+        <img src="assets/matlab_icon.png" alt="matlab" width="16" height="16" />
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3-alt"></i>
         <i class="fa-brands fa-git-alt"></i>
         <i class="fa-brands fa-github-alt"></i>
-        <i class="fa-solid fa-database"></i>
-        <i class="devicon-r-plain"></i>
-        <i class="devicon-c-plain-wordmark"></i>
+        <i class="fa-brands fa-linux"></i>
+        <i class="fa-brands fa-figma"></i>
       </div>
     </section>
 

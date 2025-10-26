@@ -2,7 +2,7 @@
 
 /* Base Styles */
 :root {
-    --text-color: #1a1c20;
+    --text-color: #ffffff;
     --link-color: #ffffff;
     --background-color: #eeeff1;
     font-size: 17px; /* Set the base font size */
@@ -19,20 +19,8 @@ html {
     scroll-padding-top: 5rem; /* Adjust this value based on the height of your nav bar */
 }
 
-@font-face {
-    font-family: "Steph";
-    src: url("fonts/steph-font.ttf");
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "Steph";
-    src: url("fonts/steph-font-bold.ttf");
-    font-weight: bold;
-}
-
 body {
-    font-family: 'Steph', sans-serif;
+    font-family: Garamond, serif;
 }
 
 a {
@@ -41,7 +29,6 @@ a {
 }
 
 nav {
-    background-color: #bfd6c4;
     display: flex;
     justify-content: space-between;
     padding: 0 3.125rem;
@@ -51,7 +38,7 @@ nav {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(191, 214, 196, 0.9);
+    background-color: rgba(45, 50, 80, 0.9);
     backdrop-filter: blur(5px);
 }
 
@@ -73,24 +60,6 @@ nav .right a:hover {
     transition: color 0.3s ease-in-out;
 }
 
-.github-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    background-color: #24292e;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.2s ease-in-out;
-    margin-top: auto;
-    align-self: flex-start;
-}
-
-.github-link:hover {
-    background-color: #2f363d;
-}
-
 /* General Section Styles */
 section {
     padding: 8rem 2rem;
@@ -105,11 +74,11 @@ section {
 }
 
 section:nth-of-type(odd) {
-    background-color: #f8f8f8; /* Light gray for odd sections */
+    background-color: #424769; /* Light gray for odd sections */
 }
 
 section:nth-of-type(even) {
-    background-color: #ffffff; /* White for even sections */
+    background-color: #676f9d; /* White for even sections */
 }
 
 /* Section Heading Styles */
@@ -127,7 +96,7 @@ section h2::after {
     position: absolute;
     width: 100px;
     height: 4px;
-    background-color: #bfd6c4;
+    background-color: #f9b17a;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
@@ -167,6 +136,7 @@ section h2::after {
 #about-section .bio p {
     font-size: 1.25rem;
     font-weight: 300;
+    color:#ffffff;
 }
 
 #about-section .social-links {
@@ -187,12 +157,12 @@ section h2::after {
 }
 
 #about-section .social-links a:hover i {
-    color: #a5d6b0;
+    color: #f6c594;
     transform: scale(1.2);
 }
 
 #about-section .social-links i {
-    color: #588061;
+    color: #f9b17a;
     font-weight: 500;
 }
 
@@ -249,21 +219,20 @@ section h2::after {
     margin-bottom: 4rem; /* Add space between subsections */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 50px;
 }
 
 .project-card {
     flex: 0 0 16rem; /* Fixed width for the boxes */
     text-align: center;
-    border: 1px solid #d7dbd8;
     border-radius: 0.5rem;
     padding: 1rem;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f6efe3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .project-card:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
 }
 
 .project-card img {
@@ -321,7 +290,7 @@ section h2::after {
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: rgb(80, 146, 232);
+    background-color: rgb(249 177 122);
     color: #24292e;
     text-decoration: none;
     border-radius: 4px;
@@ -331,7 +300,7 @@ section h2::after {
 }
 
 .project-card .report-download:hover {
-    background-color: rgb(129, 181, 248);
+    background-color: rgb(246 197 148);
 }
 
 .project-card .report-download svg {
@@ -365,26 +334,26 @@ section h2::after {
 
 #skills-section i {
     font-size: 3rem;
-    color: #588061;
+    color: #f9b17a;
     transition: transform 0.3s ease, color 0.3s ease;
     margin: 1rem 0; /* Add margin to ensure proper spacing */
 }
 
 #skills-section i:hover {
     transform: scale(1.2);
-    color: #a5d6b0;
+    color: #f6c594;
 }
 
 #skills-section img {
     font-size: 3rem;
-    color: #588061;
+    color: #f9b17a;
     transition: transform 0.3s ease, color 0.3s ease;
     margin: 1rem 0; /* Add margin to ensure proper spacing */
 }
 
 #skills-section img:hover {
     transform: scale(1.2);
-    color: #a5d6b0;
+    color: #f6c594;
 }
 
 /* Contact Section */
@@ -418,25 +387,6 @@ footer {
     padding: 1rem 0;
     font-size: 0.875rem;
 }
-
-/* Cards Swiper */
-.swiper {
-    width: 100%;
-    overflow-x: scroll !important;
-  }
-
-.swiper-slide {
-    width: 272px !important;
-    height: 375.75px;
-}
-
-.swiper-slide > a {
-    display: block;
-    transform: scale(0.9);
-    width: 272px;
-    height: 375.75px;
-}
-
 
 /* Media Queries for Responsiveness */
 @media (min-width: 1690px) {

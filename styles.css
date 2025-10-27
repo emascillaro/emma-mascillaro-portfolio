@@ -380,6 +380,33 @@ section h2::after {
     line-height: 1.6;
 }
 
+#contact-section .social-links {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+    max-width: 56.25rem;
+    text-align: center;    
+}
+
+#contact-section .social-links a {
+    padding: 0;
+    margin: 0 0.75rem;
+}
+
+#contact-section .social-links a i {
+    transition: transform 0.3s, color 0.3s;
+}
+
+#contact-section .social-links a:hover i {
+    color: #f6c594;
+    transform: scale(1.2);
+}
+
+#contact-section .social-links i {
+    color: #f9b17a;
+    font-weight: 500;
+}
+
 footer {
     background-color: #909090;
     color: #fff;

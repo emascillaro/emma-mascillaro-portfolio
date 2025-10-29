@@ -344,6 +344,18 @@ section h2::after {
     color: #f6c594;
 }
 
+#skills-section svg {
+    font-size: 3rem;
+    color: #f9b17a;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin: 1rem 0; /* Add margin to ensure proper spacing */
+}
+
+#skills-section svg:hover {
+    transform: scale(1.2);
+    color: #f6c594;
+}
+
 #skills-section img {
     font-size: 3rem;
     color: #f9b17a;
@@ -375,36 +387,40 @@ section h2::after {
 
 #contact-section p {
     font-size: 1.25rem;
-    color: #555;
+    color: #ffffff;
     max-width: 600px;
     line-height: 1.6;
 }
 
-#contact-section .social-links {
-    font-size: 2.25rem;
-    margin-bottom: 2rem;
-    padding: 0 2rem;
-    max-width: 56.25rem;
-    text-align: center;    
+#contact-section .email-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: rgb(249 177 122);
+    color: #24292e;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+    margin: 0.5rem;
+    align-self: center;
 }
 
-#contact-section .social-links a {
-    padding: 0;
-    margin: 0 0.75rem;
+#contact-section .email-button:hover {
+    background-color: rgb(246 197 148);
 }
 
-#contact-section .social-links a i {
-    transition: transform 0.3s, color 0.3s;
+#contact-section .email-button svg {
+    margin-right: 4px;
+    fill: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
 
-#contact-section .social-links a:hover i {
-    color: #f6c594;
-    transform: scale(1.2);
-}
-
-#contact-section .social-links i {
-    color: #f9b17a;
-    font-weight: 500;
+#contact-section .email-button a {
+    font-size: 1.25rem;
+    color: #ffffff;
+    max-width: 600px;
+    line-height: 1.2;
 }
 
 footer {

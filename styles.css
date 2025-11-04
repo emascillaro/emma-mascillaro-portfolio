@@ -188,6 +188,152 @@ section h2::after {
 #about-section .headshot img:hover {
     transform: scale(1.2);
 }
+#education-section {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 2rem;
+    padding: 6rem 3rem; /* give breathing room below fixed nav */
+}
+
+#education-section h2 {
+    margin-bottom: 1rem;
+    font-size: 2.75rem;
+    font-weight: 700;
+    text-align: center; /* match other sections' centered headings */
+    width: 100%;
+}
+
+.education-wrapper {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 3.25rem; /* space for timeline */
+}
+
+/* vertical timeline line */
+.education-wrapper::before {
+    content: '';
+    position: absolute;
+    left: 1.5rem;
+    top: 0.75rem;
+    bottom: 0.5rem;
+    width: 3px;
+    background: rgba(249, 177, 122, 0.9);
+    border-radius: 2px;
+}
+
+.education-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.education-item {
+    position: relative;
+    padding: 1.25rem 1.5rem;
+    background: rgba(255,255,255,0.03);
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 1rem;
+    align-items: start;
+}
+
+/* timeline dot for each item */
+.education-item::before {
+    content: '';
+    position: absolute;
+    left: -0.875rem; /* centers over timeline */
+    top: 1.25rem;
+    width: 1rem;
+    height: 1rem;
+    background: #f9b17a;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(249,177,122,0.12);
+}
+
+.edu-degree {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 0.25rem;
+}
+
+.edu-institution {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f0e6d8;
+    margin-bottom: 0.5rem;
+}
+
+.edu-meta {
+    font-size: 0.95rem;
+    color: #e8e8e8;
+}
+
+.edu-dates {
+    text-align: right;
+    font-weight: 600;
+    color: #f6c594;
+}
+
+.edu-details {
+    margin-top: 0.5rem;
+    color: #e6e6e6;
+    line-height: 1.5;
+}
+
+.edu-lists {
+    display: flex;
+    gap: 2rem;
+    margin-top: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.edu-lists ul {
+    list-style: disc inside;
+    margin: 0;
+    padding-left: 1rem;
+    color: #f0efe8;
+}
+
+.edu-lists ul li {
+    margin-bottom: 0.35rem;
+    font-weight: 400;
+    font-size: 0.98rem;
+}
+
+.education-activities h5,
+.education-keycourses h5 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f9b17a;
+}
+
+/* Small screens: single-column item layout and hide the big right column */
+@media (max-width: 900px) {
+    .education-wrapper { padding-left: 2rem; }
+    .education-wrapper::before { left: 1.1rem; }
+    .education-item { grid-template-columns: 1fr; }
+    .education-item::before { left: -1.05rem; top: 1rem; }
+    .edu-dates { text-align: left; margin-top: 0.25rem; }
+}
+
+@media (max-width: 576px) {
+    #education-section { padding: 4rem 1rem; }
+    .education-wrapper { padding-left: 1.5rem; }
+    .education-wrapper::before { display: none; }
+    .education-item::before { display: none; }
+}
+
 
 /* Projects Section */
 #projects-section {

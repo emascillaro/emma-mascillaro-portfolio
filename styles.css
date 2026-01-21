@@ -83,12 +83,13 @@ section:nth-of-type(even) {
 
 /* Section Heading Styles */
 section h2 {
-    font-size: 3rem;
+    font-size: clamp(1.6rem, 2.1vw + 1rem, 2.5rem);
     font-weight: 700;
     color: var(--text-color);
     margin-bottom: 1rem;
     letter-spacing: 1px;
     position: relative;
+    text-align: center;
 }
 
 section h2::after {
@@ -303,6 +304,8 @@ section h2::after {
     .education-item { grid-template-columns: 1fr; }
     .education-item::before { left: -1.05rem; top: 1rem; }
     .edu-dates { text-align: left; margin-top: 0.25rem; }
+    /* reduce projects side padding and make cards slightly narrower on tablets */
+    .project-subsection { padding: 0 1rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 }
 
 @media (max-width: 576px) {
@@ -310,6 +313,8 @@ section h2::after {
     .education-wrapper { padding-left: 1.5rem; }
     .education-wrapper::before { display: none; }
     .education-item::before { display: none; }
+    /* compact project container on small phones */
+    .project-subsection { padding: 0 0.5rem; gap: 1rem; }
 }
 
 
@@ -339,15 +344,18 @@ section h2::after {
 }
 
 .project-subsection {
-    width: 100%;
-    margin-bottom: 4rem; /* Add space between subsections */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    /* base: allow cards to flex but keep a healthy minimum so they're reasonably wide */
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 1.5rem; /* spacing between cards */
+    max-width: var(--max-width);
+    margin: 1rem auto 0;
+    padding: 0 3rem; /* more left/right breathing room for wider cards */
+    box-sizing: border-box;
 }
 
 .project-card {
-    flex: 0 0 16rem; /* Fixed width for the boxes */
+    width: 100%; /* let the grid control card width */
     text-align: center;
     border-radius: 0.5rem;
     padding: 1rem;
@@ -361,7 +369,7 @@ section h2::after {
 
 .project-card img {
     width: 100%;
-    height: 12rem;
+    height: 14rem; /* taller image for wider cards */
     object-fit: cover;
     border-radius: 0.25rem;
     margin-bottom: 0.75rem;
@@ -574,6 +582,18 @@ footer {
 
     #about-section .headshot {
         width: 18rem;
+
+/* Force an exact number of columns at large breakpoints (optional) */
+/* Force exact column counts at larger breakpoints for consistent visual rhythm */
+@media (min-width: 1200px) {
+    /* wide screens: exactly 3 columns */
+    .project-subsection { grid-template-columns: repeat(3, 1fr); max-width: 1320px; }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+    /* medium-wide screens: exactly 2 columns */
+    .project-subsection { grid-template-columns: repeat(2, 1fr); }
+}
         height: 18rem;
     }
 

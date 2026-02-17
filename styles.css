@@ -109,8 +109,8 @@ section h2::after {
     min-height: 10vh;
     flex-direction: row;
     justify-content: center;
-    padding-top: 15rem;
-    padding-bottom: 10rem;
+    padding-top: 11rem;
+    padding-bottom: 5.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
     display: flex;
@@ -169,8 +169,8 @@ section h2::after {
 
 /*About section - headshot*/
 #about-section .headshot {
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
+    height: 25rem;
     overflow: hidden;
     margin-top: 1rem;
     margin-bottom: 37px;
@@ -189,6 +189,8 @@ section h2::after {
 #about-section .headshot img:hover {
     transform: scale(1.2);
 }
+
+/*Education Section*/
 #education-section {
     width: 100%;
     margin: 0 auto;
@@ -235,8 +237,6 @@ section h2::after {
     gap: 1rem;
     align-items: start;
 }
-
-
 
 .edu-degree {
     font-size: 1.25rem;
